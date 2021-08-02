@@ -35,7 +35,7 @@ fun onConnectToDiscord(api: DiscordApi) {
         }
     }
 
-    api.globalSlashCommands.thenAccept{ commands ->
+    api.globalSlashCommands.thenAccept { commands ->
         commands.forEach { command ->
             println("The command '${command.name}' been registered. [${command.id}]")
         }
